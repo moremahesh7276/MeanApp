@@ -6,4 +6,5 @@ RUN npm cache verify
 RUN npm install
 COPY . /usr/drc/app
 EXPOSE 4200
+RUN cd /usr/src/app
 CMD ["npm","start"]
